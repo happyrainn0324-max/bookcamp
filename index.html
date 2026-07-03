@@ -29,8 +29,8 @@
       linear-gradient(180deg,#06080f 0%,#0b1220 48%,#13234c 100%);animation:auroraMove 9s ease-in-out infinite}
     body{margin:0;overflow-x:hidden;font-family:'Pretendard','Noto Sans KR',system-ui,sans-serif;background:#06080f;color:#eef0fb}
     header{position:relative;z-index:2;padding-top:clamp(48px,10vw,120px)}
-    @media(max-width:560px){header{padding-top:88px}}
-    @media(max-width:400px){header{padding-top:96px}}
+    @media(max-width:560px){header{padding-top:56px}}
+    @media(max-width:400px){header{padding-top:60px}}
     .hero-image-wrap{position:relative;width:100%;max-width:1672px;margin:0 auto;line-height:0;overflow:hidden}
     .hero-image{
       width:100%;height:auto;display:block;
@@ -69,7 +69,8 @@
     .talk-card.active .talk-chevron{transform:rotate(180deg)}
     .talk-card.booktalk.active{border-color:rgba(255,214,140,.7);background:rgba(255,214,140,.08);box-shadow:0 0 0 1px rgba(255,214,140,.35),0 14px 30px rgba(0,0,0,.4)}
     .talk-card.interview.active{border-color:rgba(127,211,255,.7);background:rgba(127,211,255,.08);box-shadow:0 0 0 1px rgba(127,211,255,.35),0 14px 30px rgba(0,0,0,.4)}
-    @media(max-width:560px){.talk-launcher{grid-template-columns:1fr;max-width:420px}.talk-title{font-size:1.1rem}.booktalk-heading{font-size:clamp(1.3rem,6.5vw,2rem);margin-top:32px;line-height:1.3}}
+    @media(max-width:560px){.talk-launcher{grid-template-columns:1fr 1fr;max-width:420px;gap:8px;padding:0 12px}.talk-card{padding:11px}.talk-icon{width:34px;height:34px;font-size:1rem}.talk-title{font-size:.86rem}.booktalk-heading{font-size:clamp(1.3rem,6.5vw,2rem);margin-top:32px;line-height:1.3}}
+    @media(max-width:400px){.talk-launcher{gap:6px;padding:0 8px}.talk-card{padding:9px;gap:8px}.talk-icon{width:30px;height:30px;font-size:.9rem}.talk-title{font-size:.76rem}}
 
     /* ── AI 대화 패널 (하단 인라인) ── */
     .talk-panels{margin:0 0 40px}
@@ -122,7 +123,7 @@
     .school-badge-divider{width:1px;align-self:stretch;background:linear-gradient(180deg,transparent,rgba(255,214,140,.4),transparent);flex-shrink:0}
     .school-badge{display:flex;align-items:center;padding:9px 18px;color:#dfe3f5;font-weight:600;font-size:.8rem;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .school-badge .tag-sep{margin:0 9px;color:rgba(255,214,140,.55);font-weight:400}
-    @media(max-width:560px){.school-badge-row{top:50px}.school-name-badge,.school-badge{padding:6px 12px;font-size:.62rem}.school-badge .tag-sep{margin:0 6px}}
+    @media(max-width:560px){.school-badge-row{display:none}}
     @media(max-width:400px){.school-name-badge,.school-badge{font-size:.56rem;padding:5px 9px}.school-badge .tag-sep{margin:0 5px}}
     @keyframes totalStarPop{0%{transform:scale(1)}40%{transform:scale(1.22)}100%{transform:scale(1)}}
     @media(max-width:560px){.total-star-badge{top:10px;right:10px;padding:7px 12px;font-size:.82rem}}
@@ -147,7 +148,8 @@
     .section-card-wrap .section-card-img{position:static;display:block;width:100%;height:auto;border-radius:24px;border:2px solid #fdf6e3;box-shadow:0 0 0 1px rgba(253,246,227,.25),0 0 24px rgba(253,246,227,.2),0 18px 34px rgba(0,0,0,.5)}
     .section-card-wrap::before{content:'⭐';position:absolute;top:-16px;left:-16px;font-size:2.1rem;line-height:1;z-index:4;filter:drop-shadow(0 0 10px rgba(255,214,140,.8)) drop-shadow(0 4px 8px rgba(0,0,0,.5))}
     .section-body{margin-left:172px}
-    @media(max-width:720px){.big-section{text-align:center}.section-card-wrap{position:relative;display:inline-block;width:170px;margin:-64px auto 4px;top:auto;left:auto;transform:none}.section-body{margin-left:0;width:100%}}
+    @media(max-width:720px){.big-section{text-align:center}.section-card-wrap{position:relative;display:inline-block;width:170px;margin:-64px auto 4px;top:auto;left:auto;transform:none}.section-body{margin-left:0;width:100%;text-align:left}}
+    .big-section .sec-title,.big-section .lead,.activity h3,.activity>p{word-break:keep-all;overflow-wrap:break-word}
     .big-section .sec-title{font-family:'Gowun Batang',serif;font-size:clamp(1.7rem,3.6vw,2.3rem);color:#fdf6e3;margin:0 0 12px;display:flex;align-items:center;gap:12px;text-shadow:0 0 20px rgba(255,214,140,.25)}
     .sec-star-badge{display:inline-flex;align-items:center;gap:4px;padding:4px 12px;border-radius:999px;background:rgba(255,214,140,.14);border:1px solid rgba(255,214,140,.4);font-size:.9rem;font-weight:800;color:#ffe68a;font-family:'Pretendard','Noto Sans KR',system-ui,sans-serif;box-shadow:0 4px 12px rgba(0,0,0,.25)}
     .sec-star-badge .sec-star-icon{font-size:1rem;filter:drop-shadow(0 0 6px rgba(255,214,140,.7))}
@@ -241,6 +243,7 @@
     .grade-select option{color:#1a1a2e;background:#fff}
     .camp-user-display{padding:13px 16px;margin-bottom:10px;border-radius:16px;background:rgba(14,116,144,.14);border:1.5px solid rgba(34,193,195,.35);color:#bfeef0;font-weight:600;font-size:.92rem;line-height:1.5}
     .camp-user-display.ready{color:#eaffff;background:rgba(14,116,144,.22);border-color:rgba(34,193,195,.55)}
+    @media(max-width:560px){.q-btn-row{flex-direction:column !important}.q-btn-row .btn{min-width:0 !important;width:100%}}
     .qcount{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:22px;padding:0 8px;border-radius:999px;background:linear-gradient(135deg,#ffe68a,#ff9f4a);color:#241a06;font-size:.78rem;font-weight:800;margin-left:8px;vertical-align:middle}
     .qboard{display:flex;flex-direction:column;gap:12px;max-height:560px;overflow-y:auto;padding-right:4px;margin-top:16px}
     .qboard-empty,.qboard-error{padding:26px 18px;text-align:center;color:#9aa0c4;background:rgba(255,255,255,.04);border-radius:16px;border:1px dashed rgba(255,255,255,.16);line-height:1.6}
@@ -324,6 +327,7 @@
     }
     .letter-fill::placeholder{color:rgba(47,63,102,.55);font-family:inherit}
     .letter-fill:focus{outline:none}
+    @media(max-width:560px){.letter-fill{font-size:5.4cqw;line-height:5.8cqw}}
     .letter-send{
       align-self:center;
       border:0;
@@ -429,7 +433,7 @@
       <p>책을 미리 읽고 작가님께 묻고 싶은 질문을 적어보세요.</p>
       <div class="camp-user-display" id="questionUserDisplay">🔒 로그인 후 학년과 이름이 표시됩니다. 상단의 "캠프 로그인"을 먼저 진행해 주세요.</div>
       <textarea id="questionText" placeholder="예: AI가 많은 일을 대신하면 사람은 무엇을 더 잘해야 할까 궁금해요."></textarea>
-      <div style="text-align:center;margin-top:12px;display:flex;gap:12px;justify-content:center">
+      <div class="q-btn-row" style="text-align:center;margin-top:12px;display:flex;gap:12px;justify-content:center">
         <button class="btn book-preview" id="bookPreviewBtn2" type="button" style="min-width:220px;font-size:1.15em">📖 책 미리 보기</button>
         <button class="btn primary" id="questionSubmitBtn" onclick="submitQuestion()" style="min-width:220px;font-size:1.15em">질문 남기기</button>
       </div>
