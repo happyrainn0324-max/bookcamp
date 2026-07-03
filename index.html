@@ -126,7 +126,7 @@
     .login-badge-icon{font-size:1.05rem}
     .login-badge-chevron{color:#fdf6e3;font-size:.7rem;margin-left:2px;transition:transform .25s ease}
     .login-badge-btn[aria-expanded="true"] .login-badge-chevron{transform:rotate(180deg)}
-    .school-badge-row{position:fixed;top:64px;left:50%;transform:translateX(-50%);z-index:60;display:flex;align-items:stretch;justify-content:center;padding:0 12px;width:100%;max-width:100vw;box-sizing:border-box}
+    .school-badge-row{position:relative;display:flex;align-items:stretch;justify-content:center;padding:64px 12px 0;width:100%;max-width:100vw;box-sizing:border-box}
     .school-badge-pill{display:flex;align-items:center;border-radius:999px;background:linear-gradient(135deg,rgba(24,34,66,.9),rgba(16,22,47,.9));border:1px solid rgba(255,214,140,.28);box-shadow:0 10px 26px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.06);backdrop-filter:blur(8px);max-width:96vw;overflow:hidden}
     .school-name-badge{display:flex;align-items:center;gap:7px;padding:9px 18px;background:linear-gradient(135deg,rgba(255,214,140,.22),rgba(255,159,74,.14));color:#ffe9b8;font-weight:800;font-size:.85rem;letter-spacing:.01em;white-space:nowrap;flex-shrink:0}
     .school-name-badge .badge-icon{font-size:.95rem;filter:drop-shadow(0 0 6px rgba(255,214,140,.6))}
@@ -252,6 +252,7 @@
     .grade-select:focus{outline:none;border-color:#f3d99a}
     .grade-select option{color:#1a1a2e;background:#fff}
     .camp-user-display{padding:13px 16px;margin-bottom:10px;border-radius:16px;background:rgba(14,116,144,.14);border:1.5px solid rgba(34,193,195,.35);color:#bfeef0;font-weight:600;font-size:.92rem;line-height:1.5}
+    .camp-user-display:empty{display:none}
     .camp-user-display.ready{color:#eaffff;background:rgba(14,116,144,.22);border-color:rgba(34,193,195,.55)}
     @media(max-width:560px){.q-btn-row{flex-direction:column !important}.q-btn-row .btn{min-width:0 !important;width:100%}}
     .qcount{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:22px;padding:0 8px;border-radius:999px;background:linear-gradient(135deg,#ffe68a,#ff9f4a);color:#241a06;font-size:.78rem;font-weight:800;margin-left:8px;vertical-align:middle}
@@ -371,7 +372,7 @@
     .photo-upload-row input[type="file"]{flex:1.4;min-width:200px;padding:10px 12px;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.2);border-radius:16px;color:#eef0fb;font-size:.85rem}
     .photo-upload-row .btn{flex-shrink:0}
     .photo-upload-status{margin-top:10px;color:#f3d99a;font-size:.85rem;min-height:1.2em;font-weight:700}
-    .photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:16px}
+    .photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px;margin-top:16px}
     .photo-card{position:relative;border-radius:16px;overflow:hidden;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);aspect-ratio:1/1}
     .photo-card img{width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in;transition:transform .25s ease}
     .photo-card:hover img{transform:scale(1.06)}
