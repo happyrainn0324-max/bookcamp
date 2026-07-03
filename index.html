@@ -107,6 +107,10 @@
     @media(max-width:400px){.talk-input-row{gap:6px;padding:12px}.talk-input-row .btn{padding:11px 14px;font-size:.88rem}}
     .btn{border:0;border-radius:18px;padding:15px 22px;font-weight:800;cursor:pointer;text-decoration:none}
     .primary{background:linear-gradient(135deg,#ffe68a,#ffb454);color:#241a06;box-shadow:0 8px 24px rgba(255,180,84,.35)}
+    .mint{background:linear-gradient(135deg,#6ee7c9,#14b8a6);color:#04302a;box-shadow:0 8px 24px rgba(20,184,166,.4)}
+    .agora-topic{margin:16px auto 0;max-width:520px;padding:16px 20px;border-radius:16px;background:rgba(20,184,166,.12);border:1.5px solid rgba(110,231,201,.4);text-align:center}
+    .agora-topic-label{display:inline-block;padding:3px 12px;border-radius:999px;background:rgba(110,231,201,.22);color:#6ee7c9;font-weight:800;font-size:.78rem;letter-spacing:.02em;margin-bottom:8px}
+    .agora-topic p{margin:6px 0 0;color:#eaffff;font-weight:700;font-size:1.02rem;line-height:1.5}
     .secondary{background:rgba(255,255,255,.14);color:white;border:1px solid rgba(255,255,255,.35)}
     .book-preview{background:linear-gradient(135deg,#7fd3ff,#a78bfa 55%,#f78fd6);color:#161233;box-shadow:0 8px 24px rgba(167,139,250,.4);position:relative;overflow:hidden}
     .book-preview::after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(255,255,255,.35),transparent 40%);pointer-events:none}
@@ -279,8 +283,8 @@
     .footer{text-align:center;color:#8a90b8;margin:10px 0 0;font-size:.86rem;line-height:1.7}
     .footer-tags{text-align:center;color:#9aa0c4;font-weight:600;font-size:1rem;letter-spacing:.02em;margin:36px 0 6px;padding:0 16px}
     .footer-tags .tag-sep{margin:0 10px;color:rgba(255,214,140,.5);font-weight:400}
-    .footer-school{text-align:center;color:#ffe9b8;font-weight:800;font-size:1rem;letter-spacing:.02em;margin:36px 0 28px}
-    @media(max-width:560px){.footer-school{font-size:.84rem;margin:28px 0 22px}}
+    .footer-school{text-align:center;color:#ffe9b8;font-weight:800;font-size:1.35rem;letter-spacing:.02em;margin:36px 0 28px}
+    @media(max-width:560px){.footer-school{font-size:1.05rem;margin:28px 0 22px}}
 
     /* 감사 편지 카드 - 손글씨 편지지 */
     .letter-wrap{
@@ -602,6 +606,13 @@
       </div>
       <h4 class="board-title">🌌 모두의 별밤 기록 <span id="logCount">0</span></h4>
       <div class="qboard" id="logList"><div class="qboard-empty">기록을 불러오는 중...</div></div>
+      <div style="display:flex;justify-content:center;margin-top:16px">
+        <a href="https://padlet.com/icedukr/7-agora-depgfs65e34b0zwl" target="_blank" rel="noopener" class="btn mint" style="text-decoration:none;display:inline-block">🏆 AGORA 공모전 바로가기</a>
+      </div>
+      <div class="agora-topic">
+        <span class="agora-topic-label">아고라 발제문</span>
+        <p>AI가 대체할 수 없는 인간의 가치에는 무엇이 있을까?</p>
+      </div>
     </div>
     </div>
   </section>
